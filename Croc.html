@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Neaty HTML Web Template</title>
+<!--
+Neaty HTML Template
+http://www.templatemo.com/tm-501-neaty
+-->
+    <!-- load stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      <!-- Bootstrap style -->
+    <link rel="stylesheet" href="css/magnific-popup.css">                                <!-- Magnific pop up style, http://dimsemenov.com/plugins/magnific-popup/ -->
+    <link rel="stylesheet" href="css/templatemo-style.css">                                   <!-- Templatemo style -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+          <![endif]-->
+</head>
+    <body>        
+        <div class="container">
+            <div class="row">
+                <div class="tm-left-right-container">
+                    <!-- Left column: logo and menu -->
+                    <div class="tm-blue-bg tm-left-column">                        
+                        <div class="tm-logo-div text-xs-center">
+                            <h1 class="tm-site-name">Reliable News Source</h1>
+                        </div>
+                        <nav class="tm-main-nav">
+                            <ul class="tm-main-nav-ul">
+                                <li class="tm-nav-item">
+                                    <a href="#welcome" class="tm-nav-item-link">Breaking News</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="#about" class="tm-nav-item-link">About Us</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="#secondgallery" class="tm-nav-item-link">2018 Archives</a>
+                                </li>
+                                <li class="tm-nav-item">
+                                    <a href="#contact" class="tm-nav-item-link">Contact Us</a>
+                                </li>
+                            </ul>
+                        </nav>                                         
+                    </div> <!-- Left column: logo and menu -->
+                    
+                    <!-- Right column: content -->
+                    <div class="tm-right-column">
+                        <figure>
+                            <img src="img/unimelbcroc.png" alt="Header image" class="img-fluid">    
+                        </figure>
+
+                        <div class="tm-content-div">
+                            <!-- Welcome section -->
+                            <section id="welcome" class="tm-section">
+                                <header>
+                                    <h2 class="tm-blue-text tm-welcome-title tm-margin-b-45">Crocodile Spotted at University of Melbourne Campus</h2>
+                                </header>
+                                <p>BREAKING NEWS: A CROCODILE HAS BEEN SPOTTED ON UNIVERSITY OF MELBOURNE</p>
+                                <p>
+                                Parkville Campus, Monday 30 March 2020. The reptile (pictured above) was seen enjoying the shallow water in a decorational river on South Lawn, at about 3:16PM. Wildlife Protective Services arrived half an hour later to relocate the crocodile to the nearby Melbourne Zoo.</p>
+                                <blockquote>
+                                <p>
+                                The crocodile was playfully named Croccy McCrocface by students.
+                                </p>
+                                </blockquote>
+                                <p> Students have been warned to keep their distance from, and avoid encouraging wildlife on campus. In response, the University of Melbourne has released a statement that they will be enforcing a Rubbish-Free Policy on campus.</p>
+                                <a href="#" class="tm-button tm-button-wide">Read More</a>  
+                            </section>
+                            <!-- About section -->
+                            <section id="about" class="tm-section">
+                                <div class="row">    
+                                        <header>
+                                            <h2 class="tm-blue-text tm-section-title tm-margin-b-45">Can you Trust Everything you Read Online?</h2>
+                                        </header>
+                                        <p>No.</p>
+                                        <blockquote>
+                                        <p>
+                                        Don't trust everything you read online.
+                                        </p>
+                                        </blockquote>
+                                </div>
+                        </div>  
+                        
+                    </div> <!-- Right column: content -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+                
+        <!-- load JS files -->
+        <script src="js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
+        <script src="js/jquery.magnific-popup.min.js"></script>     <!-- Magnific pop-up (http://dimsemenov.com/plugins/magnific-popup/) -->
+        <script src="js/jquery.singlePageNav.min.js"></script>      <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+        <script>     
+       
+            $(document).ready(function(){
+
+                // Single page nav
+                $('.tm-main-nav').singlePageNav({
+                    'currentClass' : "active",
+                    offset : 20
+                });
+
+                // Magnific pop up
+                $('.tm-gallery-1').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-gallery-2').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-gallery-3').magnificPopup({
+                  delegate: 'a', // child items selector, by clicking on it popup will open
+                  type: 'image',
+                  gallery: {enabled:true}
+                  // other options
+                }); 
+
+                $('.tm-current-year').text(new Date().getFullYear());                
+            });
+        </script>             
+</body>
+</html>
